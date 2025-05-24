@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>ProductivityPro</title>
+  <style>
+    /* Basic styles until we set up Tailwind CSS */
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #1a1a1a;
+      color: #ffffff;
+    }
+    
+    .container {
+      display: flex;
+      height: 100vh;
+    }
+    
+    .sidebar {
+      width: 220px;
+      background-color: #2a2a2a;
+      padding: 20px;
+    }
+    
+    .content {
+      flex: 1;
+      padding: 20px;
+      overflow-y: auto;
+    }
+    
+    .nav-item {
+      padding: 10px;
+      margin-bottom: 5px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+    .nav-item:hover {
+      background-color: #3a3a3a;
+    }
+    
+    .nav-item.active {
+      background-color: #4a4a4a;
+    }
+    
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    
+    .card {
+      background-color: #2a2a2a;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    
+    .btn {
+      background-color: #3B82F6;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    .btn:hover {
+      background-color: #2563EB;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <h2>ProductivityPro</h2>
+      <div class="nav-item active">Dashboard</div>
+      <div class="nav-item">Analytics</div>
+      <div class="nav-item">Focus Assistant</div>
+      <div class="nav-item">Categories</div>
+      <div class="nav-item">Settings</div>
+    </div>
+    
+    <div class="content">
+      <div class="header">
+        <h1>Dashboard</h1>
+        <button class="btn">Pause Tracking</button>
+      </div>
+      
+      <div class="card">
+        <h3>Today's Activity</h3>
+        <p>Loading activity data...</p>
+      </div>
+      
+      <div class="card">
+        <h3>Focus Time</h3>
+        <p>Loading focus metrics...</p>
+      </div>
+      
+      <div class="card">
+        <h3>Category Breakdown</h3>
+        <p>Loading categories...</p>
+      </div>
+    </div>
+  </div>
+  
+  <script src="index.js"></script>
+</body>
+</html>
