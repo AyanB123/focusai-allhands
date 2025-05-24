@@ -1,0 +1,94 @@
+/* Sidebar styles */
+.sidebar {
+  width: 250px;
+  height: 100%;
+  background-color: var(--bg-primary);
+  border-right: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  padding: 20px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.logo h1 {
+  font-size: 1.5rem;
+  color: var(--accent-color);
+  font-weight: 600;
+}
+
+.tracking-status {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.nav-menu {
+  flex: 1;
+  padding: 20px 0;
+  overflow-y: auto;
+}
+
+.nav-menu ul {
+  list-style: none;
+}
+
+.nav-menu li {
+  margin-bottom: 5px;
+}
+
+.nav-menu a {
+  display: block;
+  padding: 10px 20px;
+  color: var(--text-primary);
+  text-decoration: none;
+  border-left: 3px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.nav-menu a:hover {
+  background-color: var(--bg-secondary);
+  color: var(--accent-color);
+}
+
+.nav-menu a.active {
+  background-color: var(--bg-secondary);
+  color: var(--accent-color);
+  border-left-color: var(--accent-color);
+  font-weight: 500;
+}
+
+.sidebar-footer {
+  padding: 20px;
+  border-top: 1px solid var(--border-color);
+}
+
+.tracking-button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  text-align: center;
+}
+
+.tracking-button.start {
+  background-color: var(--productive-color);
+  color: white;
+}
+
+.tracking-button.start:hover {
+  opacity: 0.9;
+}
+
+.tracking-button.pause {
+  background-color: var(--distracting-color);
+  color: white;
+}
+
+.tracking-button.pause:hover {
+  opacity: 0.9;
+}

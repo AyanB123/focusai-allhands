@@ -1,0 +1,85 @@
+/* Header styles */
+.header {
+  height: 60px;
+  background-color: var(--bg-primary);
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  justify-content: space-between;
+}
+
+.page-title h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.current-activity {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.activity-label {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.activity-name {
+  font-weight: 500;
+}
+
+.activity-time {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.header-controls {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.theme-toggle {
+  font-size: 1.2rem;
+  padding: 5px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.theme-toggle:hover {
+  background-color: var(--bg-secondary);
+}
+
+.window-controls {
+  display: flex;
+  gap: 10px;
+}
+
+.window-controls button {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.window-controls button:hover {
+  background-color: var(--bg-secondary);
+}
+
+.minimize-btn, .maximize-btn {
+  color: var(--text-secondary);
+}
+
+.close-btn {
+  color: var(--distracting-color);
+}
+
+.close-btn:hover {
+  background-color: var(--distracting-color);
+  color: white;
+}
