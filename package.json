@@ -1,0 +1,44 @@
+{
+  "name": "productivitypro",
+  "version": "1.0.0",
+  "description": "AI-powered productivity companion for optimal work habits",
+  "main": "start.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "webpack --mode development && electron .",
+    "build": "webpack --mode production && electron-builder",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-electron": "electron src/main/main.js",
+    "start-python": "python src/python/server.py"
+  },
+  "keywords": ["productivity", "time-tracking", "AI", "machine-learning"],
+  "author": "OpenHands",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.9.0",
+    "chart.js": "^4.4.9",
+    "d3": "^7.9.0",
+    "electron": "^36.3.1",
+    "electron-builder": "^26.0.12",
+    "express": "^5.1.0",
+    "plotly.js": "^3.0.1",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-router-dom": "^7.6.0",
+    "socket.io": "^4.8.1",
+    "tailwindcss": "^4.1.7"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.27.1",
+    "@babel/preset-env": "^7.27.2",
+    "@babel/preset-react": "^7.27.1",
+    "autoprefixer": "^10.4.21",
+    "babel-loader": "^10.0.0",
+    "css-loader": "^7.1.2",
+    "postcss": "^8.5.3",
+    "postcss-loader": "^8.1.1",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.99.9",
+    "webpack-cli": "^6.0.1"
+  }
+}
